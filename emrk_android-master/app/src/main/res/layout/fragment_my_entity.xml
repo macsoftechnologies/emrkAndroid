@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MyEntityFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_margin="5dp"
+            android:id="@+id/iv_entity"
+            android:layout_width="80dp"
+            tools:src="@drawable/entity_profile"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/lato_bold"
+                tools:text="Entity Name"
+                android:id="@+id/txt_entity"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageView
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:src="@drawable/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+            <TextView
+                tools:text="Owner Name"
+                android:id="@+id/txt_vendor_name"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvcontacts"
+                    android:text="Contacts"
+                    android:layout_height="35dp"
+                    android:paddingLeft="15dp"
+                    android:drawableTint="@color/white"
+                    android:drawableLeft="@drawable/contact_white"
+                    android:background="@drawable/login_submit_bg"
+                    android:textColor="@color/white"
+                    android:layout_width="120dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tvlocation"
+                    android:text="Locations"
+                    android:paddingLeft="15dp"
+                    android:drawableTint="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/contact_white"
+                    android:background="@drawable/login_submit_bg"
+                    android:textColor="@color/white"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/tvaddproduct"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="ADD PRODUCT "
+        android:padding="10dp"
+        android:gravity="center"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/add"
+        android:background="@drawable/login_submit_bg"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <ProgressBar
+        android:layout_margin="@dimen/dimen_10_dp"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        tools:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        />
+<!--    android:background="#ECEFEF"-->
+<!--    <ScrollView-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <include layout="@layout/row_entity_products"/>-->
+<!--        <include layout="@layout/row_entity_products"/>-->
+<!--        <include layout="@layout/row_entity_products"/>-->
+<!--        <include layout="@layout/row_entity_products"/>-->
+<!--        <include layout="@layout/row_entity_products"/>-->
+
+<!--    </LinearLayout>-->
+<!--    </ScrollView>-->
+</LinearLayout>

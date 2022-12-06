@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7177066983",
+    "project_id": "emrk-cb32d",
+    "storage_bucket": "emrk-cb32d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7177066983:android:2544a14e1d112167098542",
+        "android_client_info": {
+          "package_name": "com.macsof.emrk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7177066983-r600qmge5ql3im8gap0i82othulahki5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7ZRQ6NETdMWvkfSQez8Nl7YbHPrnSjpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7177066983-r600qmge5ql3im8gap0i82othulahki5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

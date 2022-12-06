@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeSearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="Home" />-->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:background="#A9F6FF"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_margin="5dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/menu_icon" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_search"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="Search Product.."
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:id="@+id/et_search"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:rotation="270"
+                android:padding="10dp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_baseline_circle_24"
+                android:tint="@color/white"
+                android:src="@drawable/search" />
+
+
+
+        </FrameLayout>
+
+
+<!--        <ImageView-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_width="36dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:src="@drawable/notification" />-->
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_baseline_circle_24"
+            android:tint="@color/white"
+            android:src="@drawable/notification" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:padding="10dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_search"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:tint="@color/grey"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:src="@drawable/search"-->
+<!--                android:layout_height="100dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_marginTop="20sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Search Available Products."-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/ll_search"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:text="No matching results found."
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_product_creation"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:textColor="#3D5AFE"
+                android:text="@string/click_here_to_get_your_product_added"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:id="@+id/chip_group"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+    </FrameLayout>
+
+</LinearLayout>

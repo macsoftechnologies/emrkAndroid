@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".activities.LanguageSelectionActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:src="@drawable/welcome"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/lato_regular"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Let's Get Started"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/lato_light"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/weclome_bg"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:text="Choose Language"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+<!--        <TextView-->
+<!--            android:padding="16dp"-->
+<!--            android:text="English"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:fontFamily="@font/lato_bold"-->
+<!--            android:background="@drawable/weclome_lang_bg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <TextView-->
+<!--            android:padding="16dp"-->
+<!--            android:text="Hindi"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:fontFamily="@font/lato_bold"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/weclome_lang_bg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <TextView-->
+<!--            android:padding="16dp"-->
+<!--            android:textSize="16sp"-->
+<!--            android:text="Telugu"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:fontFamily="@font/lato_bold"-->
+<!--            android:background="@drawable/weclome_lang_bg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/rg_languages"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/btn_continue"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Continue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:background="@drawable/weclome_continue_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>

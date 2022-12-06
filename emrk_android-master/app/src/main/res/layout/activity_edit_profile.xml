@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_first_name"
+            android:singleLine="true"
+            android:hint="First Name"
+            android:textSize="16sp"
+            android:textColorHint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_last_name"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:hint="Last Name"
+            android:textSize="16sp"
+            android:textColorHint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/et_mobile"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile"
+            android:textColorHint="@color/grey"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/et_alt_mobile"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:hint="Alternate Mobile"
+            android:textColorHint="@color/grey"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_email"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:textSize="16sp"
+            android:textColorHint="@color/grey"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_entity_name"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:hint="Entity Name"
+            android:textSize="16sp"
+            android:textColorHint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:drawableTint="@color/colorPrimary"
+            android:id="@+id/et_primary"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:hint="Primary Location"
+            android:textSize="16sp"
+            android:drawablePadding="20sp"
+            android:clickable="true"
+            android:editable="false"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/ll_another_locations"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:id="@+id/txt_add_another"
+            android:drawableRight="@drawable/add"
+            android:gravity="right|center_vertical"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:text="Add Another Locations"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/add"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/dotted_rect"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="User Profile"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/removeprofile"
+                    android:paddingLeft="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:drawableRight="@drawable/ic_baseline_delete_forever_24"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text=" Remove "
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_entity"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/add"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/dotted_rect"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Entity Profile"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/removeentity"
+                    android:paddingLeft="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:drawableRight="@drawable/ic_baseline_delete_forever_24"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text=" Remove "
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:text="EDIT"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:background="@drawable/login_submit_bg"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

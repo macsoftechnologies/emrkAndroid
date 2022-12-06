@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeSearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="Home" />-->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:background="#A9F6FF"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/menu_img"
+            android:layout_margin="5dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/menu_icon" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_search"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:hint="Search Product.."
+                android:id="@+id/et_search"
+                android:singleLine="true"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:rotation="270"
+                android:padding="10dp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_baseline_circle_24"
+                android:src="@drawable/search"
+                app:tint="@color/white" />
+
+
+
+        </FrameLayout>
+
+
+<!--        <ImageView-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_width="36dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:src="@drawable/notification" />-->
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="10dp"
+            android:id="@+id/iv_notification"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_baseline_circle_24"
+            android:src="@drawable/notification"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:id="@+id/chip_group"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_height="wrap_content">
+        </com.google.android.material.chip.ChipGroup>
+
+        <LinearLayout
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/emptyProductsView"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:text="No matching results found."
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_product_creation"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:textColor="#3D5AFE"
+                android:text="@string/click_here_to_get_your_product_added"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/sizelayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/home_spinner_bg"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_size"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:text="Size"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/down_blue"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lengthlayout"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/home_spinner_bg"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_length"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:text="Length"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/down_blue"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_qty"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/home_spinner_bg"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_qty"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Qty"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/locationlayout"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/home_spinner_bg"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_location"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:text="Location"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/down_blue"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:text="Vendors"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:drawablePadding="10dp"
+        android:layout_height="50dp"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            />
+        <TextView
+            android:id="@+id/emptyVendorsView"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/black"
+            android:text="No Vendors Available."
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

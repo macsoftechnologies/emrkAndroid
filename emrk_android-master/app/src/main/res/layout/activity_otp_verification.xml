@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".activities.LoginActivity">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/otp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="200dp"/>
+
+<!--        <EditText-->
+<!--            android:hint="OTP"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:textColorHint="@color/grey"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="14sp"
+        android:text="Enter The OTP Sent On Your Mobile"
+        android:textColor="@color/black" />
+
+    <com.poovam.pinedittextfield.SquarePinField
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:cornerRadius="5dp"
+        app:fieldBgColor="#fff"
+        app:highlightColor="@color/colorPrimary"
+        app:noOfFields="6"
+        android:textSelectHandle="@drawable/text_handle"
+        android:id="@+id/squareField"
+        android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="right"
+            android:textSize="14sp"
+            android:text="@string/didn_t_receive_the_otp_resend"
+            android:textColor="@color/colorPrimary" />
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:layout_width="200dp"
+            android:background="@drawable/login_submit_bg"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>

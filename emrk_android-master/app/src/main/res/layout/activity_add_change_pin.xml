@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activities.AddChangePinActivity">
+
+    <TextView
+        android:id="@+id/txt_title_1"
+        android:layout_width="match_parent"
+        android:text="Enter New Pin"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <com.poovam.pinedittextfield.SquarePinField
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:cornerRadius="5dp"
+        app:fieldBgColor="#fff"
+        app:noOfFields="4"
+        android:textSelectHandle="@drawable/text_handle"
+        android:id="@+id/squareField1"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_title_2"
+        android:layout_width="match_parent"
+        android:text="Confirm Pin"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <com.poovam.pinedittextfield.SquarePinField
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:cornerRadius="5dp"
+        app:fieldBgColor="#fff"
+        app:noOfFields="4"
+        android:textSelectHandle="@drawable/text_handle"
+        android:id="@+id/squareField2"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/weclome_continue_bg"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:text="Submit"
+        android:textColor="@color/colorPrimary" />
+
+
+</LinearLayout>

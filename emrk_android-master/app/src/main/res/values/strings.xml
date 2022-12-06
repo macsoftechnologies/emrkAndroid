@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EMRK</string>
+    <string name="view_less">View Less</string>
+    <string name="view_more">View More</string>
+    <string name="are_you_new_user_please_register">Are you new user, Please <b><u>Register</u></b></string>
+    <string name="if_already_registered_user_please_login">If Already Registered User, Please <b><u>Login</u></b></string>
+    <string name="didn_t_receive_the_otp_resend">Did Receive the OTP? <b><u>Resend</u></b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+    <string name="click_here_to_get_your_product_added"><u>Click here to get your product added.</u></string>
+</resources>

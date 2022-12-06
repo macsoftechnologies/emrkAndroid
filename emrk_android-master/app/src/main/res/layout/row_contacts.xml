@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            tools:text="1. Raju"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/txt_mobile"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:textColorLink="@color/colorPrimary"
+            android:autoLink="phone"
+            android:drawableRight="@drawable/ic_baseline_phone_enabled_24"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            tools:text="9876545673"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:text="Delete"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/row_entity_delete_bg"
+            android:textColor="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</LinearLayout>

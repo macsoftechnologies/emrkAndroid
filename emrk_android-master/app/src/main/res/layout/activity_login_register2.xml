@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".activities.LoginRegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_login_bio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_bio"
+            android:background="@drawable/weclome_lang_bg"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_bio"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_baseline_fingerprint_24"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_width="wrap_content"
+                android:text="Login with Biometric"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_bold"
+            android:layout_width="wrap_content"
+            android:text="--- OR ----"
+            android:id="@+id/txt_or"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"/>
+
+        <com.poovam.pinedittextfield.SquarePinField
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:cornerRadius="5dp"
+            app:fieldBgColor="#fff"
+            app:noOfFields="4"
+            android:textSelectHandle="@drawable/text_handle"
+            android:id="@+id/squareField"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_light"
+            android:layout_width="wrap_content"
+            android:text="Forgot your password"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/ll_login"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/weclome_continue_bg"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:text="Login"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/weclome_lang_bg"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:text="Register"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/weclome_lang_bg"
+    android:fontFamily="@font/lato_bold"
+    android:gravity="center"
+    android:padding="12dp"
+    tools:text="English"
+    android:button="@null"
+    tools:textColor="@color/black"
+    android:textColor="@color/language_text_color"
+    android:textSize="16sp" />
